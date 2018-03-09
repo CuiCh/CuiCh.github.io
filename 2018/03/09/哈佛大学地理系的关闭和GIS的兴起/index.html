@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="历史," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="哈佛大学是世界级的高等学府，于382年的历史中只取消过一个学科体系，那就是地理系。 它的地理系是地貌学大师William Davis于1904年创建，在美国地理学界中有着很高的地位，但很不幸，曾经辉煌的哈佛地理系于1948年轰然倒下。 伏笔故事要回溯到1939年，当年美国威斯康星大学麦迪逊分校的地理系教授Richard Hartshorne出版《地理学的性质》一书，他认为地理学的合法性来自于其综合">
+<meta name="keywords" content="历史">
+<meta property="og:type" content="article">
+<meta property="og:title" content="哈佛大学地理系的关闭和GIS的兴起">
+<meta property="og:url" content="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/index.html">
+<meta property="og:site_name" content="崔子橙">
+<meta property="og:description" content="哈佛大学是世界级的高等学府，于382年的历史中只取消过一个学科体系，那就是地理系。 它的地理系是地貌学大师William Davis于1904年创建，在美国地理学界中有着很高的地位，但很不幸，曾经辉煌的哈佛地理系于1948年轰然倒下。 伏笔故事要回溯到1939年，当年美国威斯康星大学麦迪逊分校的地理系教授Richard Hartshorne出版《地理学的性质》一书，他认为地理学的合法性来自于其综合">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/images/Hartshorne.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/images/Schaefer.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/images/Mike_Goodchild_cropped.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/images/Jack.jpg">
+<meta property="og:updated_time" content="2018-03-09T13:46:00.140Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="哈佛大学地理系的关闭和GIS的兴起">
+<meta name="twitter:description" content="哈佛大学是世界级的高等学府，于382年的历史中只取消过一个学科体系，那就是地理系。 它的地理系是地貌学大师William Davis于1904年创建，在美国地理学界中有着很高的地位，但很不幸，曾经辉煌的哈佛地理系于1948年轰然倒下。 伏笔故事要回溯到1939年，当年美国威斯康星大学麦迪逊分校的地理系教授Richard Hartshorne出版《地理学的性质》一书，他认为地理学的合法性来自于其综合">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/images/Hartshorne.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/"/>
+
+
+
+
+
+  <title>哈佛大学地理系的关闭和GIS的兴起 | 崔子橙</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">崔子橙</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">写字的地方</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/09/哈佛大学地理系的关闭和GIS的兴起/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="崔成">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="崔子橙">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">哈佛大学地理系的关闭和GIS的兴起</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T21:40:58+08:00">
+                2018-03-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/GIS/" itemprop="url" rel="index">
+                    <span itemprop="name">GIS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>哈佛大学是世界级的高等学府，于382年的历史中只取消过一个学科体系，那就是地理系。</p>
+<p>它的地理系是地貌学大师William Davis于1904年创建，在美国地理学界中有着很高的地位，但很不幸，曾经辉煌的哈佛地理系于1948年轰然倒下。</p>
+<h3 id="伏笔"><a href="#伏笔" class="headerlink" title="伏笔"></a>伏笔</h3><p>故事要回溯到1939年，当年美国威斯康星大学麦迪逊分校的地理系教授<a href="https://en.wikipedia.org/wiki/Richard_Hartshorne" target="_blank" rel="noopener">Richard Hartshorne</a>出版《地理学的性质》一书，他认为地理学的合法性来自于其综合性，认为地理学的性质在于研究区域差异，区域的独特性是地理研究的核心。</p>
+<div align="center"><br>    <img src="images/Hartshorne.jpg"><br>    <p align="center">Richard Hartshorne</p><br></div>
+
+
+
+<p>它彻底宣告了“环境决定论”的终结，标志着地理学走向新时期，不过这些论调也为哈佛大学地理系的灭亡埋下了伏笔。</p>
+<h3 id="哈佛地理系之死"><a href="#哈佛地理系之死" class="headerlink" title="哈佛地理系之死"></a>哈佛地理系之死</h3><p>一门以描述区域间差异为核心的学科，如果没有内在规律可循，只能沦为博物学家的玩物。越来越多的学者认为地理学逐渐流于表面化和描述化，地理学在以严谨而闻名的哈佛受到了越来越多的质疑，哈佛大学校长James Conant更是在多种场合下表示地理学不是一门大学学科(geography is not a university subject)。</p>
+<p>地理科学本身就缺乏坚实的理论基础，认识论方法论模糊，自然地理和人文地理两大门派的不断斗争加速了它的灭亡。在内外交困之中，1948年，哈佛校董会宣布解散地理系。</p>
+<p>哈佛的地理系是全美最悠久的地理系，师资力量也最强，即使在它最后的几年仍是该领域的权威。它的衰亡，说明了地理学面临着被赶出科学界的危机。</p>
+<h3 id="地理学界的布鲁诺"><a href="#地理学界的布鲁诺" class="headerlink" title="地理学界的布鲁诺"></a>地理学界的布鲁诺</h3><p>出现这样的学科危机，自然会有人勇敢地站出来。第一位为地理学正声的是爱荷华州立大学的教授<a href="https://en.wikipedia.org/wiki/Fred_K._Schaefer" target="_blank" rel="noopener">Fred K. Schaefer</a>。</p>
+<div align="center"><br>    <img src="images/Schaefer.jpg"><br>    <p align="center">Fred K. Schaefer</p><br></div>
+
+<p>他发表的《Exceptionalism in Geography: A Methodological Examination》 一文中尖锐地批判了Hartshorne的观点，指出Hartshorne错误地认为地理学和历史一样，是一门与其他所有学科都有所不同的特殊科学，而特殊性就在于描述不同区域的独特性，Schaefer将这种论调称之为地理学中的“特例主义(Exceptionalism)”，它终将导致地理学的非科学化。<br>他同时提出要将逻辑实证主义和科学方法论的概念引入地理，认为地理学和所有科学一样，在于寻找客观规律。地理知识≠地理学。</p>
+<p>他在文章中批判了Hartshorne，Sauer等权威，影射他们的思想是地理学走向灭亡的罪魁祸首。Hartshorne极其气愤，致函给杂志的主编，认为Schaefer的文章是“对学科的犯罪”，必须”struggle against”，凭借他如日中天的声望，学术界一片打杀之声。</p>
+<p>遗憾的是，Schaefer本人在文章正式付梓之前就因心脏病突发而去世，无法与Hartshorne进一步争论。据说Schaefer死后，地理界的很多同僚都拒绝为其作悼词。</p>
+<h3 id="计量革命"><a href="#计量革命" class="headerlink" title="计量革命"></a>计量革命</h3><p>但地理系在各大高校式微的现实使得一众青年地理学者从Schaefer的文章中找到了希望，他们将计量革命引入到地理学，加入了新鲜血液的地理系也获得了新生。如加州伯克利大学，威斯康星大学，华盛顿大学的地理系都得到了保留，而且一些新生的力量迅速壮大,如俄亥俄州立大学和宾夕法尼亚大学的地理系都是在此时崛起的,成为计量地理学的重镇。</p>
+<p>1969年，国际计量地理季刊《Geographical Analysis》创刊，地理学的研究范式发生了很大改变，从单纯的地理现象描述向复杂的地理解释转变，从传统的经验主义的区域描述方法向实证主义的数量分析方法靠拢。</p>
+<p>然而在计量革命的后期，片面追求定量化，滥用数学公式和统计学方法的趋势愈加明显，而地理学本身是一个开放的复杂巨系统，实际上并不能满足经典的经济地理科学，空间经济学，区位论的一些假设，计量地理学离地理概念越来越远。1976年计量委员会撤销，计量革命以失败告终，不过即使如此，计量革命至少在当时给地理学续了一命。</p>
+<h3 id="GIS的兴起"><a href="#GIS的兴起" class="headerlink" title="GIS的兴起"></a>GIS的兴起</h3><p>20世纪80年代，科学界逐渐认识到空间分析方法的巨大潜力及其与非空间分析的巨大差异。1988年,在David Simonatte等著名科学家的努力下，美国国家自然科学基金委(NSF)投资在全美三所高校建立了国家地理信息与分析中心(National Center for Geographic Information and Analysis, NCGIA)，开展地理信息科学及相关技术研究。这三所高校是加州大学圣芭芭拉分校，纽约州立大学布法罗分校，缅因大学。</p>
+<p>以加州大学圣芭芭拉分校为例，当时的地理系主任David Simonette和其他教授认为地理学内部包括自然科学和社会科学，地理学的不同研究分支的理论和方法差距太大，需要建立一门语言来沟通地理学各个分支。他们最终选择了数学、统计学、计算机科学作为地理学的通用语言。对于地理学研究领域而言，这门语言就是地图学与计算机图形学，后来则演变为地理信息系统，即通过GIS来统一地理学中的自然科学，人文科学和技术。</p>
+<p>GIS通过不同的数据库，不同数据的差异体现地理世界的分异，同时提供各种工具、程序和算法进行空间数据处理，发现相对普遍、具有科学意义的模式和规律，这实际上将区域地理学派注重的“区域独特性”和计量地理注重的“科学方法论”统一到了一起。GIS超脱于自然地理学和人文地理学，是地理学的形式化(刘瑜，北京大学)。</p>
+<p>这种前瞻性的学术思想，引领了UCBS地理系的急速发展，使其在短短20年内就达到世界一流水平。地理学第一定律的提出者Tobler和地理信息科学之父GoodChild都在这里工作过。</p>
+<blockquote>
+<p>everyting is related to everything else, but near things are more related to each other. ——Wanldo R. Tobler</p>
+</blockquote>
+<p>1992年，GoodChild在国际地理信息系统杂志(IJGIS)发表“地理信息科学”一文，标志着“地理信息科学”作为一门学科的诞生。</p>
+<div align="center"><br>    <img src="images/Mike_Goodchild_cropped.jpg"><br>    <p align="center">Michael Frank Goodchild</p><br></div>
+
+
+<h3 id="地理系的归来"><a href="#地理系的归来" class="headerlink" title="地理系的归来"></a>地理系的归来</h3><p>在哈佛地理系关门的日子，Howard Fisher博士所主持的哈佛大学计算机图形实验室以微薄之力支撑危局，培养出迄今仍是独步世界的“孤独的GIS教父”——Jack Dangermond。</p>
+<p>Jack Dangermond在哈佛学习景观设计学(Landscape Architecture)专业，但是也对哈佛计算机图形学和空间分析实验室的工作感到兴趣。Dangermond先生所创办的ESRI后来扛起了GIS软件发展创新的大旗。</p>
+<p><div align="center"><br>    <img src="images/Jack.jpg"><br>    Jack夫妇<br></div><br>除了ESRI奠基人以外，Intergraph公司的David Sinton，ERDAS公司的创始人Lawrie Jordan和Bruce Rado等都是来自于哈佛实验室。</p>
+<p>2006年，地理学以崭新的面目回归了哈佛，在美国地理学会和哈佛大学的支持下，哈佛大学成立了地理分析中心(Center for Geographic Analysis, <a href="http://gis.harvard.edu/" target="_blank" rel="noopener">CGA</a>)，这是一个跨学科的研究机构，建立的目的是与哈佛大学文、理、法、工、农、医等各个门类进行学科交叉，因为空间思维有助于很多科学问题的解答，并需要运用空间分析统计的相关理论和方法，例如社会、经济相关的研究，建立相关模型就要考虑空间自相关的存在对样本数据的影响；使用相关统计数据时，就要考虑统计单元的变化带来的可变面元问题(MAUP)；研究疾病发生和传播需要分析病例在空间上的分布和聚集状态等。</p>
+<p>今天以哈佛、耶鲁、普林斯顿为代表的美国常青藤(Ivy League)也纷纷建立了GIS和遥感相关的研究中心。</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
+<li><a href="http://blog.sina.com.cn/s/blog_643115fc01011pdz.html" target="_blank" rel="noopener">1948-2006：哈佛大学地理系的灭亡与地理学的重生</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_53dbe24b0101be6t.html" target="_blank" rel="noopener">南大校友Sweeper(2000)原创:地理系在哈佛的灭亡与计量革命</a></li>
+<li><a href="http://blog.csdn.net/allenlu2008/article/details/50764685" target="_blank" rel="noopener">地理学史话：哈佛地理系之死</a></li>
+<li><a href="http://blog.sciencenet.cn/blog-336909-1069938.html" target="_blank" rel="noopener">哈佛大学地理系的解散与地理学的崛起</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_643115fc0100nmpw.html" target="_blank" rel="noopener">地理信息四十年——回顾与反思</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_643115fc01014q7k.html" target="_blank" rel="noopener">Golledge和空间分析的心理学传统</a></li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/历史/" rel="tag"># 历史</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/09/70岁退休/" rel="next" title="70岁退休">
+                <i class="fa fa-chevron-left"></i> 70岁退休
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="崔成" />
+          <p class="site-author-name" itemprop="name">崔成</p>
+           
+              <p class="site-description motion-element" itemprop="description">从零开始</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/CuiCh" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://macshuo.com/" title="何天乐" target="_blank">何天乐</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#伏笔"><span class="nav-number">1.</span> <span class="nav-text">伏笔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#哈佛地理系之死"><span class="nav-number">2.</span> <span class="nav-text">哈佛地理系之死</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#地理学界的布鲁诺"><span class="nav-number">3.</span> <span class="nav-text">地理学界的布鲁诺</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计量革命"><span class="nav-number">4.</span> <span class="nav-text">计量革命</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GIS的兴起"><span class="nav-number">5.</span> <span class="nav-text">GIS的兴起</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#地理系的归来"><span class="nav-number">6.</span> <span class="nav-text">地理系的归来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考资料"><span class="nav-number">7.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">崔成</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
